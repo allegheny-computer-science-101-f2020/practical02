@@ -16,19 +16,12 @@ import practicaltwo.StatisticsCalculator;
 
 public class TestStatisticsCalculator {
 
-  // TODO: Make sure that you understand why DELTA is needed in the tests
-
-  /** All double values in assertions much be very close to each other.
-   *  Please see the following web site for more details:
-   *  http://junit.org/junit4/javadoc/latest/allclasses-frame.html */
-  private static final double DELTA = 1e-15;
-
   @Test
   public void testCalculateUnitArithmeticMean() {
     Double[] values = {1.0, 1.0, 1.0};
     Double expectedMean = new Double((1.0 + 1.0 + 1.0) / 3);
     Double actualMean = StatisticsCalculator.calculateArithmeticMean(values);
-    assertEquals(actualMean, expectedMean, DELTA);
+    assertEquals(actualMean, expectedMean);
   }
 
   @Test
@@ -36,7 +29,7 @@ public class TestStatisticsCalculator {
     Double[] values = {10.0, 10.0, 10.0};
     Double expectedMean = new Double((10.0 + 10.0 + 10.0) / 3);
     Double actualMean = StatisticsCalculator.calculateArithmeticMean(values);
-    assertEquals(actualMean, expectedMean, DELTA);
+    assertEquals(actualMean, expectedMean);
   }
 
   @Test
@@ -46,7 +39,7 @@ public class TestStatisticsCalculator {
     Double actualSubtraction =
         new Double(((10.0 - actualMean) + (10.0 - actualMean) + (10.0 - actualMean)));
     Double zero = new Double(0.0);
-    assertEquals(actualSubtraction, zero, DELTA);
+    assertEquals(actualSubtraction, zero);
   }
 
   @Test
@@ -55,7 +48,7 @@ public class TestStatisticsCalculator {
     Double actualMean = StatisticsCalculator.calculateArithmeticMean(values);
     Double[] valuesAddition = {15.0, 15.0, 15.0};
     Double actualMeanAddition = StatisticsCalculator.calculateArithmeticMean(valuesAddition);
-    assertEquals(actualMeanAddition, new Double(actualMean + 5.0), DELTA);
+    assertEquals(actualMeanAddition, new Double(actualMean + 5.0));
   }
 
   @Test
@@ -82,19 +75,15 @@ public class TestStatisticsCalculator {
   }
 
   @Test
-  public void testCalulateStandardDeviationIsZero() {
+  public void testCalculateStandardDeviationIsZero() {
     Double[] values = {10.0, 10.0, 10.0};
-    Double actualStandardDeviation = StatisticsCalculator.calculateStandardDeviation(values);
-    Double zero = new Double(0.0);
-    assertEquals(actualStandardDeviation, zero, DELTA);
+    // TODO: Complete this method
   }
 
   @Test
-  public void testCalulateStandardDeviationIsNonNegative() {
+  public void testCalculateStandardDeviationIsNonNegative() {
     Double[] values = {11.0, 12.0, 15.2};
-    Double actualStandardDeviation = StatisticsCalculator.calculateStandardDeviation(values);
-    Double zero = new Double(0.0);
-    assertTrue(actualStandardDeviation > zero);
+    // TODO: Complete this method
   }
 
 }

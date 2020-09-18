@@ -33,7 +33,7 @@
 
 ## Objectives
 
-To continue to practice using GitHub to access the files for a course assignment. Additionally, to review how to use the Ubuntu operating system and software development programs such as a"terminal window" and the "Docker desktop". You will also continue to practice using Slack to support communication with the technical leaders and the instructor. Next, you will learn how to implement and test a Java program that uses arrays and loops to compute summary statistics fora list of data points, also practicing how to use an automated grading tool to assess your progress
+To continue to practice using GitHub to access the files for a course assignment. Additionally, to review how to use software development programs such as a"terminal window" and the "Docker desktop". You will also continue to practice using Slack to support communication with the technical leaders and the instructor. Next, you will learn how to implement and test a Java program that uses arrays and loops to compute summary statistics for a list of data points, also practicing how to use an automated grading tool to assess your progress
 
 ## Introduction
 
