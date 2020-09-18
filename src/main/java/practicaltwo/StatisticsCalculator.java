@@ -44,6 +44,7 @@ public class StatisticsCalculator {
    */
   public static Double calculateStandardDeviation(Double[] timings) {
     // TODO: use a static method in Math to calculate the standard deviation
+    // Note: it can be calculated as a square root of the variance
     return 0.0;
   }
 
