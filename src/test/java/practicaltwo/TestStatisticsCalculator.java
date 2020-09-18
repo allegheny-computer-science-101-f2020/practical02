@@ -8,6 +8,9 @@ import practicaltwo.StatisticsCalculator;
 
 // TODO: Make sure that you understand the purpose of each test case
 
+/* Please see the following web site for more details:
+*  http://junit.org/junit4/javadoc/latest/allclasses-frame.html */
+
 /**
  * A JUnit test suite for StatisticsCalculator.
  *
